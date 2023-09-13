@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Personal protfolio website</title>
+    <link rel="stylesheet" href="style123.css">
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="p1.jpg" class="logo">
+            <ul>
+                <li><a href="Calculator.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+           </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hi,I'm <span>satya kumar</span><br> from Nepal</h1>
+        </div>
+    </div>
+</div>
+<!-------------------about----------------->
+<div id="about">
+    <div class="conntainer">
+        <div class="row">
+            <img src="p1.jpg" width="500" height="600">
+        <div class="about-col-2">
+            <h1 class="sub-tittle">About me</h1>
+             <p>Satya Kumar is a talented web developer known for<BR> 
+                creating elegant and functional websites. With a keen<BR> 
+                eye for design and strong coding skills, he consistently<BR> 
+                delivers user-friendly and visually appealing web solutions.<BR> 
+                His passion for web development and dedication <BR>
+                to staying current with industry trends make him a valuable<BR>
+                 asset in the digital realm.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience </p>
+                    <p class="tab-links" onclick="opentab('Education')">Education </p>
+                 </div>
+                 <div class="tab-contents active-tab" id ="Skills">
+                    <ul>
+                        <li><span>UI/?UX</span><BR>Designing Web/apps interface</li>
+                            <li><span>Web development</span><BR>Designing Web/apps interface</li>
+                                <li><span>App development</span><BR>Designing Web/apps interface</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2022 -currently</span><BR>Designing web pages and web sites</li>
+                            <li><span>2019-2021</span><BR>interrship in nepal telecom</li>
+                                <li><span>2016-2017</span><BR>10th pass</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2016</span><BR>UX/IX design training at et institute</li>
+                            <li><span>2016</span><BR>12th from janchetana</li>
+                                <li><span>2014</span><BR>12th from janchetana</li>
+                    </ul>
+                 </div>
+        </div> 
+        </div>
+    </div>
+
+</div>
+<!-----------------services------------------------>
+<div class="services">
+    <div class="container">
+    <h1 class="sub-title"> My Services</h1>
+    <div class="services-list">
+        <div>
+            <h2>Website design</h2>
+            <p>Website design typically involves various elements<br> 
+                such as layout, color 
+                scheme, typography, and<br> user interface. 
+                If you have a specific project <br>in mind or need guidance on a 
+                 aspect of website design, <br>please provide more details, 
+                 and I'll do my best to assist you. </p>
+                <a href="#">learn more</a>
+        </div>
+        <br>
+        
+        <div></div>
+            <h2>App design</h2>
+            <p>"Create a seamless user experience with an <br>
+                intuitive interface, engaging visuals, and easy <br>
+                navigation. Prioritize user feedback for continuous<br>
+                 improvement and stay 
+                up-to-date with design trends. Deliver a <br>
+                mobile-responsive and user-friendly app that <br>
+                exceeds expectations." </p>
+                <a href="#">learn more</a>
+        </div>
+        <div>
+            <br>
+            
+            
+            <h2>Web design</h2>
+            <p>"Web design is the art of creating digital <br>
+                 experiences, blending aesthetics and functionality. <br>
+                  It's about crafting visually appealing layouts, <br>
+                   user-friendly navigation, and responsive designs. <br>
+                 Effective web design communicates a brand's identity <br>
+                  and engages visitors, leaving a lasting impression." </p>
+                <a href="#">learn more</a>
+        </div>
+        <div>
+            <p>
+                <br>
+                <br>
+                
+                
+
+<p><nav>
+    <a href="Hackerrank">HTML</a> 
+    <a href="Github">CSS</a> 
+    <a href="GeeksGeeks">JavaScript</a> 
+    <a href="Quora">Python</a>
+    </nav>
+             
+            </p>
+              
+
+                
+        </div>
+
+
+
+
+    </div>
+</div>
+</div>
+<script>
+    var tablinks = document.getElementByclassName("tab-links");
+    var tabcontents = document.getElementByclassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontents.classList.remove("active-tab");
+        }
+         <!-- event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab"); -->
+    } 
+</script>
+</body>
+</html>
